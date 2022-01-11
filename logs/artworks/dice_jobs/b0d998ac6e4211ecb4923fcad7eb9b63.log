@@ -1,0 +1,240 @@
+2022-01-05 21:15:27 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: artworks)
+2022-01-05 21:15:27 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.6.15 (default, Sep 10 2021, 00:26:58) - [GCC 9.3.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-91-generic-x86_64-with-Ubuntu-20.04-focal
+2022-01-05 21:15:27 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-01-05 21:15:27 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'artworks',
+ 'LOG_FILE': 'logs/artworks/dice_jobs/b0d998ac6e4211ecb4923fcad7eb9b63.log',
+ 'NEWSPIDER_MODULE': 'artworks.spiders',
+ 'SPIDER_MODULES': ['artworks.spiders']}
+2022-01-05 21:15:27 [scrapy.extensions.telnet] INFO: Telnet Password: f018ff2bd60b467c
+2022-01-05 21:15:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-01-05 21:15:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:47183/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:15:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:47183
+2022-01-05 21:15:28 [urllib3.connectionpool] DEBUG: http://127.0.0.1:47183 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:15:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-01-05 21:15:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-01-05 21:15:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['artworks.pipelines.ArtworksPipeline']
+2022-01-05 21:15:28 [scrapy.core.engine] INFO: Spider opened
+2022-01-05 21:15:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-01-05 21:15:28 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-01-05 21:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale> (referer: None)
+2022-01-05 21:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=15&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:15:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:39709/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:15:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:39709
+2022-01-05 21:15:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:39709 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:15:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:39709/session/60bbc744fd776294d3ff6dcc4ad685f2/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=15&pageSize=50"}
+2022-01-05 21:15:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:39709 "POST /session/60bbc744fd776294d3ff6dcc4ad685f2/url HTTP/1.1" 200 14
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:39709/session/60bbc744fd776294d3ff6dcc4ad685f2/url {}
+2022-01-05 21:15:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:39709 "GET /session/60bbc744fd776294d3ff6dcc4ad685f2/url HTTP/1.1" 200 101
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:39709/session/60bbc744fd776294d3ff6dcc4ad685f2/source {}
+2022-01-05 21:15:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:39709 "GET /session/60bbc744fd776294d3ff6dcc4ad685f2/source HTTP/1.1" 200 104528
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:39709/session/60bbc744fd776294d3ff6dcc4ad685f2/timeouts {"implicit": 60000}
+2022-01-05 21:15:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:39709 "POST /session/60bbc744fd776294d3ff6dcc4ad685f2/timeouts HTTP/1.1" 200 14
+2022-01-05 21:15:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=7&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:15:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50451/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:15:42 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:50451
+2022-01-05 21:15:43 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50451 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:15:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50451/session/b814fbb93505643281ca3373a9ed347a/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=7&pageSize=50"}
+2022-01-05 21:15:49 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2022-01-05 21:15:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50451 "POST /session/b814fbb93505643281ca3373a9ed347a/url HTTP/1.1" 200 14
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:50451/session/b814fbb93505643281ca3373a9ed347a/url {}
+2022-01-05 21:15:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50451 "GET /session/b814fbb93505643281ca3373a9ed347a/url HTTP/1.1" 200 271
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:50451/session/b814fbb93505643281ca3373a9ed347a/source {}
+2022-01-05 21:15:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50451 "GET /session/b814fbb93505643281ca3373a9ed347a/source HTTP/1.1" 200 155279
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50451/session/b814fbb93505643281ca3373a9ed347a/timeouts {"implicit": 60000}
+2022-01-05 21:15:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50451 "POST /session/b814fbb93505643281ca3373a9ed347a/timeouts HTTP/1.1" 200 14
+2022-01-05 21:15:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=6&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:15:55 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2022-01-05 21:15:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:40011/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:15:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:40011
+2022-01-05 21:15:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:40011 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:15:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:15:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:40011/session/84b191b2bcd315662f81c853a84a765c/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=6&pageSize=50"}
+2022-01-05 21:16:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:40011 "POST /session/84b191b2bcd315662f81c853a84a765c/url HTTP/1.1" 200 14
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:40011/session/84b191b2bcd315662f81c853a84a765c/url {}
+2022-01-05 21:16:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:40011 "GET /session/84b191b2bcd315662f81c853a84a765c/url HTTP/1.1" 200 271
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:40011/session/84b191b2bcd315662f81c853a84a765c/source {}
+2022-01-05 21:16:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:40011 "GET /session/84b191b2bcd315662f81c853a84a765c/source HTTP/1.1" 200 156648
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:40011/session/84b191b2bcd315662f81c853a84a765c/timeouts {"implicit": 60000}
+2022-01-05 21:16:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:40011 "POST /session/84b191b2bcd315662f81c853a84a765c/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=12&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=14&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=5&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=8&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=11&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=10&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=9&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=13&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36805/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:36805
+2022-01-05 21:16:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36805 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36805/session/f55e880e70d118ed49cb1c2d760b7f9c/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=12&pageSize=50"}
+2022-01-05 21:16:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36805 "POST /session/f55e880e70d118ed49cb1c2d760b7f9c/url HTTP/1.1" 200 14
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:36805/session/f55e880e70d118ed49cb1c2d760b7f9c/url {}
+2022-01-05 21:16:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36805 "GET /session/f55e880e70d118ed49cb1c2d760b7f9c/url HTTP/1.1" 200 272
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:36805/session/f55e880e70d118ed49cb1c2d760b7f9c/source {}
+2022-01-05 21:16:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36805 "GET /session/f55e880e70d118ed49cb1c2d760b7f9c/source HTTP/1.1" 200 156312
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36805/session/f55e880e70d118ed49cb1c2d760b7f9c/timeouts {"implicit": 60000}
+2022-01-05 21:16:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36805 "POST /session/f55e880e70d118ed49cb1c2d760b7f9c/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:53511/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:53511
+2022-01-05 21:16:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:53511 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:53511/session/d087b4575310dfb74465603ab4ab4cb2/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=14&pageSize=50"}
+2022-01-05 21:16:23 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown
+2022-01-05 21:16:34 [urllib3.connectionpool] DEBUG: http://127.0.0.1:53511 "POST /session/d087b4575310dfb74465603ab4ab4cb2/url HTTP/1.1" 200 14
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:53511/session/d087b4575310dfb74465603ab4ab4cb2/url {}
+2022-01-05 21:16:34 [urllib3.connectionpool] DEBUG: http://127.0.0.1:53511 "GET /session/d087b4575310dfb74465603ab4ab4cb2/url HTTP/1.1" 200 272
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:53511/session/d087b4575310dfb74465603ab4ab4cb2/source {}
+2022-01-05 21:16:34 [urllib3.connectionpool] DEBUG: http://127.0.0.1:53511 "GET /session/d087b4575310dfb74465603ab4ab4cb2/source HTTP/1.1" 200 156479
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:53511/session/d087b4575310dfb74465603ab4ab4cb2/timeouts {"implicit": 60000}
+2022-01-05 21:16:34 [urllib3.connectionpool] DEBUG: http://127.0.0.1:53511 "POST /session/d087b4575310dfb74465603ab4ab4cb2/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:48757/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:48757
+2022-01-05 21:16:35 [urllib3.connectionpool] DEBUG: http://127.0.0.1:48757 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:48757/session/cea7bf2022012f6a0dbbe0e698b88e29/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=5&pageSize=50"}
+2022-01-05 21:16:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:48757 "POST /session/cea7bf2022012f6a0dbbe0e698b88e29/url HTTP/1.1" 200 14
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:48757/session/cea7bf2022012f6a0dbbe0e698b88e29/url {}
+2022-01-05 21:16:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:48757 "GET /session/cea7bf2022012f6a0dbbe0e698b88e29/url HTTP/1.1" 200 271
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:48757/session/cea7bf2022012f6a0dbbe0e698b88e29/source {}
+2022-01-05 21:16:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:48757 "GET /session/cea7bf2022012f6a0dbbe0e698b88e29/source HTTP/1.1" 200 156044
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:48757/session/cea7bf2022012f6a0dbbe0e698b88e29/timeouts {"implicit": 60000}
+2022-01-05 21:16:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:48757 "POST /session/cea7bf2022012f6a0dbbe0e698b88e29/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=4&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=3&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=2&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=1&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=30&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=29&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=28&pageSize=50> (referer: https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale)
+2022-01-05 21:16:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:43543/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:42 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:43543
+2022-01-05 21:16:42 [urllib3.connectionpool] DEBUG: http://127.0.0.1:43543 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:43543/session/1249ba2c4bc8352460cd544a84e7ced7/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=8&pageSize=50"}
+2022-01-05 21:16:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:43543 "POST /session/1249ba2c4bc8352460cd544a84e7ced7/url HTTP/1.1" 200 14
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:43543/session/1249ba2c4bc8352460cd544a84e7ced7/url {}
+2022-01-05 21:16:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:43543 "GET /session/1249ba2c4bc8352460cd544a84e7ced7/url HTTP/1.1" 200 271
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:43543/session/1249ba2c4bc8352460cd544a84e7ced7/source {}
+2022-01-05 21:16:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:43543 "GET /session/1249ba2c4bc8352460cd544a84e7ced7/source HTTP/1.1" 200 128068
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:43543/session/1249ba2c4bc8352460cd544a84e7ced7/timeouts {"implicit": 60000}
+2022-01-05 21:16:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:43543 "POST /session/1249ba2c4bc8352460cd544a84e7ced7/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36285/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:36285
+2022-01-05 21:16:49 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36285 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36285/session/8e5f59e54cb12a46c526c0eb87d5b583/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=11&pageSize=50"}
+2022-01-05 21:16:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36285 "POST /session/8e5f59e54cb12a46c526c0eb87d5b583/url HTTP/1.1" 200 14
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:36285/session/8e5f59e54cb12a46c526c0eb87d5b583/url {}
+2022-01-05 21:16:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36285 "GET /session/8e5f59e54cb12a46c526c0eb87d5b583/url HTTP/1.1" 200 258
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:36285/session/8e5f59e54cb12a46c526c0eb87d5b583/source {}
+2022-01-05 21:16:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36285 "GET /session/8e5f59e54cb12a46c526c0eb87d5b583/source HTTP/1.1" 200 156132
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:36285/session/8e5f59e54cb12a46c526c0eb87d5b583/timeouts {"implicit": 60000}
+2022-01-05 21:16:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:36285 "POST /session/8e5f59e54cb12a46c526c0eb87d5b583/timeouts HTTP/1.1" 200 14
+2022-01-05 21:16:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56261/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:16:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:56261
+2022-01-05 21:16:59 [urllib3.connectionpool] DEBUG: http://127.0.0.1:56261 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:16:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:16:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56261/session/fc55bd713d46274987ff96a3d5749c18/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=10&pageSize=50"}
+2022-01-05 21:17:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:56261 "POST /session/fc55bd713d46274987ff96a3d5749c18/url HTTP/1.1" 200 14
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56261/session/fc55bd713d46274987ff96a3d5749c18/url {}
+2022-01-05 21:17:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:56261 "GET /session/fc55bd713d46274987ff96a3d5749c18/url HTTP/1.1" 200 272
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:56261/session/fc55bd713d46274987ff96a3d5749c18/source {}
+2022-01-05 21:17:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:56261 "GET /session/fc55bd713d46274987ff96a3d5749c18/source HTTP/1.1" 200 156129
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:56261/session/fc55bd713d46274987ff96a3d5749c18/timeouts {"implicit": 60000}
+2022-01-05 21:17:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:56261 "POST /session/fc55bd713d46274987ff96a3d5749c18/timeouts HTTP/1.1" 200 14
+2022-01-05 21:17:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54091/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:17:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:54091
+2022-01-05 21:17:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:54091 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:17:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54091/session/aeb3b05d0213e817a11a06a6d271c2f3/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=9&pageSize=50"}
+2022-01-05 21:17:12 [urllib3.connectionpool] DEBUG: http://127.0.0.1:54091 "POST /session/aeb3b05d0213e817a11a06a6d271c2f3/url HTTP/1.1" 200 14
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54091/session/aeb3b05d0213e817a11a06a6d271c2f3/url {}
+2022-01-05 21:17:12 [urllib3.connectionpool] DEBUG: http://127.0.0.1:54091 "GET /session/aeb3b05d0213e817a11a06a6d271c2f3/url HTTP/1.1" 200 165
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54091/session/aeb3b05d0213e817a11a06a6d271c2f3/source {}
+2022-01-05 21:17:12 [urllib3.connectionpool] DEBUG: http://127.0.0.1:54091 "GET /session/aeb3b05d0213e817a11a06a6d271c2f3/source HTTP/1.1" 200 122067
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54091/session/aeb3b05d0213e817a11a06a6d271c2f3/timeouts {"implicit": 60000}
+2022-01-05 21:17:12 [urllib3.connectionpool] DEBUG: http://127.0.0.1:54091 "POST /session/aeb3b05d0213e817a11a06a6d271c2f3/timeouts HTTP/1.1" 200 14
+2022-01-05 21:17:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50095/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values.notifications": 1}, "extensions": [], "args": ["--disable-infobars", "start-maximized", "--disable-extensions", "--headless"]}}}
+2022-01-05 21:17:13 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:50095
+2022-01-05 21:17:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50095 "POST /session HTTP/1.1" 200 751
+2022-01-05 21:17:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50095/session/1feba83f1c9e1fea6e2550bb7352336a/url {"url": "https://www.dice.com/jobs?q=data%20analyst&location=fort%20lauderdale&page=13&pageSize=50"}
+2022-01-05 21:17:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50095 "POST /session/1feba83f1c9e1fea6e2550bb7352336a/url HTTP/1.1" 200 14
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:50095/session/1feba83f1c9e1fea6e2550bb7352336a/url {}
+2022-01-05 21:17:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50095 "GET /session/1feba83f1c9e1fea6e2550bb7352336a/url HTTP/1.1" 200 272
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:50095/session/1feba83f1c9e1fea6e2550bb7352336a/source {}
+2022-01-05 21:17:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50095 "GET /session/1feba83f1c9e1fea6e2550bb7352336a/source HTTP/1.1" 200 156174
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:50095/session/1feba83f1c9e1fea6e2550bb7352336a/timeouts {"implicit": 60000}
+2022-01-05 21:17:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:50095 "POST /session/1feba83f1c9e1fea6e2550bb7352336a/timeouts HTTP/1.1" 200 14
+2022-01-05 21:17:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2022-01-05 21:17:21 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 19 pages/min), scraped 0 items (at 0 items/min)

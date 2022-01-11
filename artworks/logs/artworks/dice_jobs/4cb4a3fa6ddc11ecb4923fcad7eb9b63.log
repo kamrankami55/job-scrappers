@@ -1,0 +1,45 @@
+2022-01-05 09:02:29 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: artworks)
+2022-01-05 09:02:29 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.6.15 (default, Sep 10 2021, 00:26:58) - [GCC 9.3.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-91-generic-x86_64-with-Ubuntu-20.04-focal
+2022-01-05 09:02:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-01-05 09:02:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'artworks',
+ 'LOG_FILE': 'logs/artworks/dice_jobs/4cb4a3fa6ddc11ecb4923fcad7eb9b63.log',
+ 'NEWSPIDER_MODULE': 'artworks.spiders',
+ 'SPIDER_MODULES': ['artworks.spiders']}
+2022-01-05 09:02:29 [scrapy.extensions.telnet] INFO: Telnet Password: 0726536ce87ce2f3
+2022-01-05 09:02:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-01-05 09:02:29 [twisted] CRITICAL: Unhandled error in Deferred:
+2022-01-05 09:02:29 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './chromedriver': './chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 1661, in _inlineCallbacks
+    result = current_context.run(gen.send, result)
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 63, in run
+    return f(*args, **kwargs)
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/scrapy/crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/scrapy/crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/scrapy/spiders/__init__.py", line 50, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "/tmp/artworks-1641355338-9c53ddzi.egg/artworks/spiders/dice_scrapper.py", line 45, in __init__
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/home/omparkash/other_projects/job-scrapers/venv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
