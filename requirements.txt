@@ -5,4 +5,4 @@ selenium==3.141.0
 -e git+https://github.com/scrapy/scrapyd-client.git#egg=scrapyd_client
 scrapyd==1.2.1
 selenium==3.141.0
-scrapyd-heroku==0.2.2
+herokuify-scrapyd==1.0
