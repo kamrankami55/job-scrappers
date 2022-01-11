@@ -5,6 +5,4 @@ selenium==3.141.0
 -e git+https://github.com/scrapy/scrapyd-client.git#egg=scrapyd_client
 scrapyd==1.2.1
 selenium==3.141.0
-django-on-heroku==1.1.2
-gunicorn==20.1.0
-whitenoise==5.3.0
+scrapyd-heroku==0.2.2
